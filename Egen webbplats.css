@@ -1,9 +1,9 @@
 body {
-    background-color: #333; /*Bakgrundsfärg*/
-    display: grid; /*För att använda grid layout*/
-    grid-template-columns: 1fr 2fr 1fr; /*Storlek på vågräta områden*/
-    grid-template-rows: 0.3fr 1fr 0.4fr 2fr 1fr; /*Storlek på lodräta områden*/
-    grid-template-areas: /*Vilka semantiska html5 element som tillhör vilket område i griden*/
+    background-color: #333; /*bakgrundsfärg*/
+    display: grid; /*för att använda grid layout*/
+    grid-template-columns: 1fr 2fr 1fr; /*storlek på vågräta områden*/
+    grid-template-rows: 0.3fr 1fr 0.4fr 2fr 1fr; /*storlek på lodräta områden*/
+    grid-template-areas: /*vilka semantiska html5 element som tillhör vilket område i griden*/
         "div div div"
         "header header header"
         "main main main"
@@ -12,7 +12,7 @@ body {
 }
 
 div {
-    grid-area: div; /*Vilket grid område "x" tillhör*/
+    grid-area: div; /*vilket grid område "x" tillhör*/
 }
 
 header {
@@ -31,19 +31,19 @@ footer {
     grid-area: footer;
 }
 
-table, /*Tabell*/
-th, /*Tabellens header*/
-td { /*Text under headern*/
-    font-size: 33px;
-    border: 1px solid black;
-    border-collapse: collapse;
-    font-family: arial;
+table,
+th,
+td {
+    font-size: 33px; /*textstorlek*/
+    border: 1px solid black; /*kant runt text/bild*/
+    border-collapse: collapse; /*om kanten ska finnas eller inte*/
+    font-family: arial; /*vilket typsnitt texten ska ha*/
 }
 
-tr:nth-child(3), /*tr = Ny rad i tabellen, nth-child = välja kolumn i tabellen*/
+tr:nth-child(3), /*välja kolumn i tabellen*/
 tr:nth-child(5) {
     background-color: black;
-    color: white; /*Textfärg*/
+    color: white; /*textfärg*/
 }
 
 tr:nth-child(even) {
@@ -62,7 +62,7 @@ ul {
 }
 
 .left {
-    text-align: left;
+    text-align: left; /*justerar texten till höger, vänster eller center*/
 }
 
 .right {
@@ -80,7 +80,7 @@ ul {
     color: white;
     font-size: 40px;
     font-family: arial;
-    text-shadow: 2px 2px 5px;
+    text-shadow: 2px 2px 5px; /*om texten ska ha en skugga bakom*/
 }
 
 .C {
@@ -104,15 +104,15 @@ h2 {
 
 .meny {
     background-color: #333;
-    overflow: hidden;
+    overflow: hidden; /*definierar vad som händer om texten inte får plats i det specifierade området*/
 }
 
 .meny a {
-    float: left;
+    float: left; /*hur elementet ska flyta*/
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    padding: 14px 16px; /*område mellan innehållet och kanten*/
+    text-decoration: none; /*ytterliggare egenskaper för texten*/
     font-size: 17px;
 }
 
@@ -138,8 +138,8 @@ a {
 }
 
 img {
-    width: 580px;
-    height: 450px;
+    width: 580px; /*bildens bredd*/
+    height: 450px; /*bildens höjd*/
     border: solid 15px;
-    border-color: #333;
+    border-color: #333; /*färg på kanten*/
 }
